@@ -39,10 +39,10 @@ export default function Home() {
         <header className={styles.header}>
           <div className={styles.logoWrapper}>
             <Image
-              src="/seasons-logo.png"
+              src="/seasons-logos.png"
               alt="Seasons Logo"
-              width={48}
-              height={48}
+              width={150}
+              height={60}
               priority
               className={styles.logoImage}
             />
