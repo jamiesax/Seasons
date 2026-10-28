@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Seasons Weather App",
+  title: "Seasons Weather & Lifestyle App",
   description: "A modern weather application built with Next.js 13, TypeScript, and Tailwind CSS. Get accurate weather forecasts, outfit recommendations, and activity suggestions based on the current weather conditions.",
 };
 
