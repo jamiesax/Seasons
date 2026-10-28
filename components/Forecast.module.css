@@ -1,0 +1,102 @@
+.card {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .card {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #60a5fa;
+}
+
+/* 7-Day Responsive Grid */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem;
+}
+
+@media (min-width: 640px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(7, minmax(0, 1fr));
+  }
+}
+
+.dayCard {
+  background-color: rgba(51, 65, 85, 0.4);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  transition: background-color 0.2s;
+}
+
+.dayCard:hover {
+  background-color: rgba(51, 65, 85, 0.7);
+}
+
+.dayName {
+  font-weight: 500;
+  color: #e2e8f0;
+  font-size: 0.875rem;
+}
+
+.iconWrapper {
+  margin: 0.5rem 0;
+}
+
+.forecastIcon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.weatherLabel {
+  font-size: 11px;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.tempSection {
+  width: 100%;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(51, 65, 85, 0.6);
+  font-size: 0.75rem;
+}
+
+.maxTemp {
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.minTemp {
+  color: #94a3b8;
+}
+
+.precip {
+  color: #93c5fd;
+  font-size: 10px;
+  margin-top: 0.25rem;
+  font-weight: 500;
+}

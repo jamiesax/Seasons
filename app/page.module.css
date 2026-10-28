@@ -1,0 +1,293 @@
+/* Main Page Layout */
+.main {
+  min-height: 100vh;
+  background-color: #0f172a;
+  color: #f1f5f9;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .main {
+    padding: 3rem;
+  }
+}
+
+.container {
+  max-width: 56rem;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Header & Search */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  border-bottom: 1px solid rgba(51, 65, 85, 0.5);
+  padding-bottom: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .header {
+    flex-direction: row;
+  }
+}
+
+.logoWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.logoImage {
+  width: 4rem;
+  height: 4rem;
+  object-fit: contain;
+}
+
+.searchForm {
+  display: flex;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .searchForm {
+    width: auto;
+  }
+}
+
+.searchInput {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  color: #f1f5f9;
+  outline: none;
+  width: 100%;
+}
+
+.searchInput:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.4);
+}
+
+@media (min-width: 640px) {
+  .searchInput {
+    width: 16rem;
+  }
+}
+
+.searchButton {
+  padding: 0.5rem 1rem;
+  background-color: #2563eb;
+  color: #ffffff;
+  border-radius: 0.5rem;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.searchButton:hover {
+  background-color: #3b82f6;
+}
+
+/* Status States */
+.loadingState {
+  text-align: center;
+  padding: 3rem 0;
+  color: #94a3b8;
+}
+
+.errorState {
+  padding: 1rem;
+  background-color: rgba(127, 29, 29, 0.5);
+  border: 1px solid #ef4444;
+  border-radius: 0.5rem;
+  color: #fca5a5;
+}
+
+/* Dashboard Grid */
+.dashboardGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .dashboardGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* Current Weather Card */
+.currentWeatherCard {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.locationTitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.weatherLabel {
+  color: #94a3b8;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.weatherIcon {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.mainTemperature {
+  font-size: 3rem;
+  font-weight: 800;
+  margin: 1rem 0;
+}
+
+.feelsLike {
+  color: #94a3b8;
+}
+
+.statsFooter {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #334155;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+/* Smart Outfit Section */
+.outfitCard {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+.outfitTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #fbbf24;
+}
+
+.outfitList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.outfitItem {
+  background-color: rgba(51, 65, 85, 0.5);
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  color: #e2e8f0;
+}
+
+/* Outdoor Activity Index Section */
+.activityCard {
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .activityCard {
+    grid-column: span 2 / span 2;
+  }
+}
+
+.activityTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #34d399;
+}
+
+.activityGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+@media (min-width: 640px) {
+  .activityGrid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.activityItem {
+  background-color: rgba(51, 65, 85, 0.4);
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 1px solid #334155;
+}
+
+.activityHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.activityName {
+  font-weight: 500;
+  color: #e2e8f0;
+}
+
+.badge {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 0.25rem;
+  font-weight: 700;
+}
+
+.badgeExcellent {
+  background-color: #064e3b;
+  color: #6ee7b7;
+}
+
+.badgeModerate {
+  background-color: #78350f;
+  color: #fde047;
+}
+
+.badgePoor {
+  background-color: #7f1d1d;
+  color: #fca5a5;
+}
+
+.activityReason {
+  font-size: 0.75rem;
+  color: #94a3b8;
+  margin: 0;
+}

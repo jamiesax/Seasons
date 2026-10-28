@@ -1,0 +1,42 @@
+.icon {
+  width: 3rem; /* equivalent to w-12 */
+  height: 3rem; /* equivalent to h-12 */
+  display: inline-block;
+}
+
+/* Weather Condition Colors */
+.sun {
+  color: #fbbf24; /* amber-400 */
+}
+
+.partlyCloudy {
+  color: #fcd34d; /* amber-300 */
+}
+
+.overcast {
+  color: #94a3b8; /* slate-400 */
+}
+
+.foggy {
+  color: #94a3b8; /* slate-400 */
+}
+
+.drizzle {
+  color: #93c5fd; /* blue-300 */
+}
+
+.rain {
+  color: #60a5fa; /* blue-400 */
+}
+
+.snow {
+  color: #c7d2fe; /* indigo-200 */
+}
+
+.thunderstorm {
+  color: #c084fc; /* purple-400 */
+}
+
+.unknown {
+  color: #64748b; /* slate-500 */
+}
